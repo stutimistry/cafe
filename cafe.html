@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Klang</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background-image: url('group.jpg'); 
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 20px 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .logo {
+            font-size: 24px;
+        }
+
+        .nav .reservation {
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 25px;
+        }
+
+        .content {
+            position: relative;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .content h1 {
+            font-size: 60px;
+            margin: 10px 0;
+        }
+
+        .content p {
+            font-size: 20px;
+            margin: 10px 0 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            background-color: #ff8c00;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #e57c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="nav">
+            <div class="logo">Barista</div>
+           
+            <div>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Our Menu</a>
+                <a href="#">Reviews</a>
+                <a href="#">Contact</a>
+                <a href="#" class="reservation">Reservation</a>
+            </div>
+        </div>
+        <div class="content">
+            <p>welcome to Barista.co</p>
+            <h1>Cafe Klang</h1>
+            <p>your favourite coffee daily lives.</p>
+            <div class="buttons">
+                <a href="#" class="button">Our Story</a>
+                <a href="#" class="button">Check Menu</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
